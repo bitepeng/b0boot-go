@@ -40,7 +40,7 @@
 ...
 ```
 #### 1.2 路由规则
-<img src="apps/docs/ui/dist/img/devdoc.png" width="500">
+
 <p>内置DevDoc：http://127.0.0.1:8081/dev/doc</p>
 
 ```
