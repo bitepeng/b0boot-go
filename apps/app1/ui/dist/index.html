@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app1</title>
+    <script src="js/ajax.js"></script>
+    <script>
+        function check(){
+            ajax("/app1/ping","","get",function(e){
+                e=JSON.parse(e);
+                //alert(e.message);
+                document.getElementById("status").innerHTML=e.message;
+            });
+        }
+    </script>
+</head>
+<body>
+<h1>
+    <h1>app1</h1>
+    <div id="status">未知</div>
+    <div>
+        <button onclick="check()">查询</button>
+    </div>
+</h1>
+</body>
+</html>
